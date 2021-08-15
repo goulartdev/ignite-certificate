@@ -50,7 +50,7 @@ const toPDF = async function (content): Promise<Buffer> {
   const pdf = await page.pdf({
     format: "a4",
     landscape: true,
-    path: process.env.IS_OFFLINE ? "certificate.pdf" : null,
+    path: process.env.IS_OFFLINE ? "tmp/certificate.pdf" : null,
     printBackground: true,
     preferCSSPageSize: true,
   });

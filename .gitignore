@@ -1,4 +1,6 @@
+tmp
 .env
+.log 
 
 # package directories
 node_modules
@@ -9,5 +11,3 @@ jspm_packages
 
 # Webpack directories
 .webpack
-
-

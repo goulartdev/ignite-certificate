@@ -4,10 +4,9 @@
   "description": "Rocketseat Ignite NodeJs bootcamp. Chapter 6.",
   "main": "serverless.ts",
   "scripts": {
-    "start": "serverless offline",
-    "db:start": "serverless dynamodb start",
-    "deploy": "sls deploy -v",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "app:start": "sls offline",
+    "db:start": "sls dynamodb start",
+    "deploy": "sls deploy -v"
   },
   "engines": {
     "node": ">=14.15.0"

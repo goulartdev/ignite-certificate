@@ -5,7 +5,11 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
+      args:
+        VARIANT: 14
+        USER_UID: 1000
+        USER_GID: 1000
     env_file: ../.env
-    command: sleep infinity
     volumes:
       - ..:/workspace:cached
+    command: sleep infinity
